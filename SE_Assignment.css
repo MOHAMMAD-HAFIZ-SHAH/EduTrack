@@ -1,0 +1,111 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e6f2f5;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #1f3b5e;
+    color: white;
+    padding: 15px 20px;
+    height: 95px;
+}
+
+/* Container for back button and logo */
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.back-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.back-btn img {
+    height: 30px;
+    width: 30px;
+}
+
+.logo {
+    height: 40px;
+}
+
+/* Assignments box */
+.assignments-box {
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 700px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Assignments container */
+.assignments-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Individual assignment styling */
+.assignment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f8f9fa;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+/* Styling for completed assignments */
+.assignment.completed {
+    background-color: #d4edda;
+}
+
+/* Set uniform spacing between elements */
+.assignment span {
+    flex: 1;
+    text-align: left;
+}
+
+/* Ensures proper alignment for Due Date */
+.due-date {
+    min-width: 180px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* Ensures uniform status alignment */
+.status {
+    max-width: 100px;
+    text-align: right;
+    font-weight: bold;
+}
+
+/* Comment box styling */
+.comment-box {
+    width: 90%;
+    margin: 20px auto;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+}
+
+/* Adds space between comment boxes */
+.comment-box + .comment-box {
+    margin-top: 15px;
+}

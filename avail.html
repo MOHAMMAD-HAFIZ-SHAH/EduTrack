@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classroom Booking System</title>
+    <link rel="stylesheet" href="avail.css">
+</head>
+<body>
+    <div class="main-container">
+        <h1>Classroom Availability</h1>
+        <input type="text" id="search" placeholder="Search for a classroom...">
+
+        <div id="classroom-list" class="list-container"></div>
+    </div>
+
+    <!-- Booking Modal -->
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-details"></p>
+            <label for="booking-date">Select Date:</label>
+            <input type="date" id="booking-date">
+            <button id="confirm-booking" class="btn-primary">Confirm Booking</button>
+        </div>
+    </div>
+
+    <script src="avail.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peer Review</title>
+    <link rel="stylesheet" href="Rating.css">
+</head>
+<body>
+    <div class="header">
+        <button class="back-btn"><img src="Back Arrow.png"></button>
+        <h2>Peer Review</h2>
+        <img src="bml 4.png" alt="BMU Logo" class="logo">
+    </div>
+
+    <div class="container">
+        <h2>Ajay</h2>
+
+        <div class="review-box">
+            <span>Contribution and Effort</span>
+            <div class="stars" data-rating="0"></div>
+        </div>
+
+        <div class="review-box">
+            <span>Participation in Meetings</span>
+            <div class="stars" data-rating="0"></div>
+        </div>
+
+        <div class="review-box">
+            <span>Communication and Adaptability</span>
+            <div class="stars" data-rating="0"></div>
+        </div>
+
+        <div class="review-box">
+            <span>Timeliness</span>
+            <div class="stars" data-rating="0"></div>
+        </div>
+
+        <div class="review-box">
+            <span>Teamwork and Collaboration</span>
+            <div class="stars" data-rating="0"></div>
+        </div>
+
+        <textarea id="feedback" placeholder="Enter the Feedback"></textarea>
+        
+        <button id="submitBtn">Submit</button>
+    </div>
+
+    <!-- Popup Message -->
+    <div id="popupMessage" class="popup">
+        <p id="popupText">Review Submitted Successfully!</p>
+        <button onclick="closePopup()">OK</button>
+    </div>
+
+    <script src="Rating.js"></script>
+</body>
+</html>

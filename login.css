@@ -1,0 +1,103 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('login_backgroud.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
+
+/* Main Container */
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 1000px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Left Section */
+.left-section {
+    background: linear-gradient(to right, #124ba6, #1e2f5c);
+    color: white;
+    padding: 20px;
+    width: 50%;
+}
+
+/* Right Section */
+.right-section {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Input Fields */
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* List Styling */
+ul {
+    margin-top: 10px;
+    padding: auto;
+}
+
+/* Styled Anchor Buttons */
+.button {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background: #3182ce;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.button:hover {
+    background: #2b6cb0;
+}
+
+/* Faculty Login Button */
+.faculty-login {
+    background: #cbd5e0;
+    color: black;
+}
+
+.faculty-login:hover {
+    background: #a0aec0;
+}
+
+/* Forgot Password Link */
+.forgot-password {
+    color: red;
+    text-align: right;
+    display: block;
+    margin: 5px 0;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
