@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="homepage.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <header class="topbar">
+    <div class="logo">Admin Panel</div>
+    <nav class="topnav-icons">
+      <a href="#" title="Dashboard"><i class="fas fa-home"></i></a>
+      <a href="#" title="Settings"><i class="fas fa-cog"></i></a>
+      <a href="#" title="Logout"><i class="fas fa-sign-out-alt"></i></a>
+      <!-- 🌙 Theme toggle button -->
+      <button class="toggle-theme" onclick="toggleTheme()" title="Toggle Dark Mode">
+        <i class="fas fa-moon"></i>
+      </button>
+    </nav>
+  </header>
+
+  <main class="main">
+    <h1>Welcome, Admin</h1>
+    <p class="subtitle">Manage users, monitor systems, and maintain data efficiently.</p>
+
+    <div class="cards">
+      <a href="#" class="card">
+        <h2><i class="fas fa-user-graduate"></i> Student Enrollment</h2>
+        <p>Approve course requests and manage waitlists.</p>
+      </a>
+      <a href="#" class="card">
+        <h2><i class="fas fa-chalkboard-teacher"></i> Faculty Management</h2>
+        <p>Manage faculty profiles and permissions.</p>
+      </a>
+      <a href="#" class="card">
+        <h2><i class="fas fa-desktop"></i> System Monitoring</h2>
+        <p>Monitor performance and system status.</p>
+      </a>
+      <a href="#" class="card">
+        <h2><i class="fas fa-database"></i> Data Management</h2>
+        <p>Maintain and update student/faculty records.</p>
+      </a>
+      <a href="#" class="card">
+        <h2><i class="fas fa-comment-dots"></i> Complaint Handling</h2>
+        <p>Review and respond to student complaints.</p>
+      </a>
+      <a href="#" class="card">
+        <h2><i class="fas fa-shield-alt"></i> Security & Privacy</h2>
+        <p>Ensure data security and access control.</p>
+      </a>
+    </div>
+  </main>
+
+  <!-- 🌗 Dark Mode Toggle Script -->
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('dark-mode');
+      const icon = document.querySelector('.toggle-theme i');
+      icon.classList.toggle('fa-sun');
+      icon.classList.toggle('fa-moon');
+    }
+  </script>
+</body>
+</html>
