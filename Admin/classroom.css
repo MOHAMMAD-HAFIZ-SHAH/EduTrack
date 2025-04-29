@@ -1,0 +1,137 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.container {
+  width: 90%;
+  max-width: 800px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+h1 {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.button-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.btn {
+  flex: 1;
+  margin: 0 5px;
+  padding: 12px 0;
+  border-radius: 12px;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-glass {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(8px);
+}
+
+.btn-glass:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.btn-gradient {
+  background: linear-gradient(to right, #4f46e5, #6d28d9);
+  box-shadow: 0 4px 20px rgba(109, 40, 217, 0.4);
+  width: 100%;
+}
+
+.btn-gradient:hover {
+  opacity: 0.9;
+}
+
+.card-form {
+  display: none;
+  margin-bottom: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.card-form h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.card-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, select {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  outline: none;
+  font-size: 14px;
+}
+
+input::placeholder, select option {
+  color: #ccc;
+}
+
+.view-schedule {
+  text-align: center;
+}
+
+.schedule-box {
+  margin-top: 15px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 16px;
+  border-radius: 12px;
+  min-height: 70px;
+  color: #f9fafb;
+  white-space: pre-line;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+  .button-row {
+    flex-direction: column;
+  }
+
+  .btn {
+    margin: 8px 0;
+  }
+}

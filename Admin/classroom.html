@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Classroom Schedule</title>
+    <link rel="stylesheet" href="classroom.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Classroom Schedule Manager</h1>
+
+        <div class="button-row">
+            <button class="btn btn-glass" id="addBtn">Add Schedule ➕</button>
+            <button class="btn btn-glass" id="updateBtn">Update Schedule 🔄</button>
+            <button class="btn btn-glass" id="deleteBtn">Delete Schedule 🗑</button>
+        </div>
+
+        <!-- Add Card -->
+        <div class="card-form" id="addCard">
+            <h2>Add Schedule</h2>
+            <form id="addForm">
+                <input type="text" id="addClassroom" placeholder="Enter Classroom Name" required>
+                <input type="date" id="addDate" required>
+                <input type="text" id="addDetails" placeholder="Enter Schedule Details" required>
+                <button type="submit" class="btn btn-gradient">Add</button>
+            </form>
+        </div>
+
+        <!-- Update Card -->
+        <div class="card-form" id="updateCard">
+            <h2>Update Schedule</h2>
+            <form id="updateForm">
+                <input type="text" id="updateClassroom" placeholder="Enter Classroom Name" required>
+                <input type="date" id="updateDate" required>
+                <input type="text" id="updateDetails" placeholder="Enter Updated Schedule Details" required>
+                <button type="submit" class="btn btn-gradient">Update</button>
+            </form>
+        </div>
+
+        <!-- Delete Card -->
+        <div class="card-form" id="deleteCard">
+            <h2>Delete Schedule</h2>
+            <form id="deleteForm">
+                <input type="text" id="deleteClassroom" placeholder="Enter Classroom Name" required>
+                <input type="date" id="deleteDate" required>
+                <button type="submit" class="btn btn-gradient">Delete</button>
+            </form>
+        </div>
+
+        <div class="view-schedule">
+            <h2>View Schedule</h2>
+            <select id="viewClassroom">
+                <option value="">Select Classroom</option>
+            </select>
+            <input type="date" id="viewDate">
+            <div class="schedule-box" id="scheduleDisplay">
+                Select a classroom and date to view schedule.
+            </div>
+        </div>
+    </div>
+
+    <script src="classroom.js"></script>
+</body>
+</html>
